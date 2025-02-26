@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	senha := gerarSenha(10)
+	senha := gerarSenha(5)
 	fmt.Println(senha)
 }
 
@@ -20,9 +20,9 @@ func gerarSenha(lenght int) string {
 
 	obrigatorio := []byte{
 		maiusculas[rand.Intn(len(maiusculas))],
-		numeros,
+		numeros[rand.Intn(len(numeros))],
 	}
-	senha := make([]byte, lenght)
+	senha := make([]byte, lenght-len(obrigatorio) )
 
 	for i := range senha {
 		senha[i] = caractereGrande[rand.Intn(len(caractereGrande))]
