@@ -38,4 +38,4 @@ func gerarSenha(lenght int) string {
 }
 
 // gerar uma senha aleatória: OK!
-// gerar uma senha MAS com obrigatoriedade: letras maiusculas, numeros e etc
+// gerar uma senha MAS com obrigatoriedade: letras maiusculas, numeros e etc: ok!
