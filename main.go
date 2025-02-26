@@ -16,7 +16,6 @@ func gerarSenha(lenght int) string {
 	maiusculas := "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 	numeros:= "0123456789"
 	caracteresEspeciais := "!@#$%^&*()+?><:{}[]"
-
 	caractereGrande := minusculas + maiusculas + numeros + caracteresEspeciais
 
 	senha := make([]byte, lenght)
