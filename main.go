@@ -10,6 +10,7 @@ func main() {
 func gerarSenha() string {
 	
 	caracteres := "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()+?><:{}[]"
+	senha = [x, x, x, x, x, x, x]
 
 	senha := make([]byte, 7)
 	senha[0] = caracteres[5]
