@@ -18,6 +18,10 @@ func gerarSenha(lenght int) string {
 	caracteresEspeciais := "!@#$%^&*()+?><:{}[]"
 	caractereGrande := minusculas + maiusculas + numeros + caracteresEspeciais
 
+	obrigatorio := []byte{
+		maiusculas[rand.Intn(len(maiusculas))],
+		numeros,
+	}
 	senha := make([]byte, lenght)
 
 	for i := range senha {
