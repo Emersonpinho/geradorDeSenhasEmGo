@@ -30,6 +30,10 @@ func gerarSenha(lenght int) string {
 
 	senha = append(senha, obrigatorio...)
 
+	rand.Shuffle(len(senha), func (i, j int)  {
+		senha[i], senha[j] = senha[j], senha[i]
+	})
+
 	return string(senha)
 }
 
