@@ -12,19 +12,18 @@ func main() {
 
 func gerarSenha(lenght int) string {
 	
-	caracteres := "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()+?><:{}[]"
+	minusculas := "abcdefghijklmnopqrstuvwxyz"
+	maiusculas := "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	numeros:= "0123456789"
+	caracteresEspeciais := "!@#$%^&*()+?><:{}[]"
+
+	caractereGrande := minusculas + maiusculas + numeros + caracteresEspeciais
 
 	senha := make([]byte, lenght)
-
-	senha[0] = caracteres[5]
-	senha[1] = caracteres[10]
-	senha[2] = caracteres[4]
-	senha[4] = caracteres[32]
 
 	for i := range senha {
 		senha[i] = caracteres[rand.Intn(len(caracteres))]
 	}
-
 
 	return string(senha)
 }
