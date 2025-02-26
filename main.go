@@ -18,6 +18,10 @@ func gerarSenha() string {
 	senha[2] = caracteres[4]
 	senha[4] = caracteres[32]
 
+	for i := range senha {
+		senha[1] = caracteres[?]
+	}
+
 
 	return string(senha)
 }
