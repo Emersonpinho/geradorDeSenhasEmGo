@@ -15,7 +15,7 @@ func gerarSenha(lenght int) string {
 	caracteres := "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()+?><:{}[]"
 
 	senha := make([]byte, lenght)
-	
+
 	senha[0] = caracteres[5]
 	senha[1] = caracteres[10]
 	senha[2] = caracteres[4]
@@ -29,5 +29,5 @@ func gerarSenha(lenght int) string {
 	return string(senha)
 }
 
-// gerar uma senha aleatória
+// gerar uma senha aleatória: OK!
 // gerar uma senha MAS com obrigatoriedade: letras maiusculas, numeros e etc
