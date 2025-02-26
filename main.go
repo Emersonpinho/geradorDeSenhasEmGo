@@ -9,12 +9,16 @@ func main() {
 
 func gerarSenha() string {
 	
-	lowerCase := "abcdefghijklmnopqrstuvwxyz"
-	upperCase := "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-	numbers := "0123456789"
-	special := "!@#$%^&*()+?><:{}[]"
+	caracteres := "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()+?><:{}[]"
 
-	return "senha"
+	senha := make([]byte, 7)
+	senha[0] = caracteres[5]
+	senha[1] = caracteres[10]
+	senha[2] = caracteres[4]
+	senha[4] = caracteres[32]
+
+
+	return string(senha)
 }
 
 // gerar uma senha aleatória
