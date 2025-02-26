@@ -1,7 +1,10 @@
 package main
 
-func main() {
+import "fmt"
 
+func main() {
+	senha := gerarSenha()
+	fmt.Println(senha)
 }
 
 // gerar uma senha aleatória
