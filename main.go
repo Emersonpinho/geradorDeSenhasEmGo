@@ -6,15 +6,16 @@ import (
 )
 
 func main() {
-	senha := gerarSenha()
+	senha := gerarSenha(10)
 	fmt.Println(senha)
 }
 
-func gerarSenha() string {
+func gerarSenha(lenght int) string {
 	
 	caracteres := "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()+?><:{}[]"
 
-	senha := make([]byte, 7)
+	senha := make([]byte, lenght)
+	
 	senha[0] = caracteres[5]
 	senha[1] = caracteres[10]
 	senha[2] = caracteres[4]
