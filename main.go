@@ -22,7 +22,7 @@ func gerarSenha(lenght int) string {
 	senha := make([]byte, lenght)
 
 	for i := range senha {
-		senha[i] = caracteres[rand.Intn(len(caracteres))]
+		senha[i] = caractereGrande[rand.Intn(len(caractereGrande))]
 	}
 
 	return string(senha)
