@@ -28,6 +28,8 @@ func gerarSenha(lenght int) string {
 		senha[i] = caractereGrande[rand.Intn(len(caractereGrande))]
 	}
 
+	senha = append(senha, obrigatorio...)
+
 	return string(senha)
 }
 
