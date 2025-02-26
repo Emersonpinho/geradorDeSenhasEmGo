@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+)
 
 func main() {
 	senha := gerarSenha()
@@ -18,7 +21,7 @@ func gerarSenha() string {
 	senha[4] = caracteres[32]
 
 	for i := range senha {
-		senha[1] = caracteres[?]
+		senha[1] = caracteres[rand.Intn(len(caracteres))]
 	}
 
 
