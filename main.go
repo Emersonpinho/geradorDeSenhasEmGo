@@ -21,7 +21,7 @@ func gerarSenha() string {
 	senha[4] = caracteres[32]
 
 	for i := range senha {
-		senha[1] = caracteres[rand.Intn(len(caracteres))]
+		senha[i] = caracteres[rand.Intn(len(caracteres))]
 	}
 
 
