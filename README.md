@@ -1,5 +1,3 @@
-### README.md for geradorDeSenhasEmGo
-
 # Gerador de Senhas em Go
 
 ![Go](https://img.shields.io/badge/Go-100%25-blue)
