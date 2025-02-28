@@ -1,6 +1,5 @@
 ### README.md for geradorDeSenhasEmGo
 
-````markdown name=README.md
 # Gerador de Senhas em Go
 
 ![Go](https://img.shields.io/badge/Go-100%25-blue)
