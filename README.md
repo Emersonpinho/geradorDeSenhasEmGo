@@ -40,48 +40,6 @@ $ go run main.go
 A1c!2
 ```
 
-## Código-Fonte
-
-```go
-package main
-
-import (
-	"fmt"
-	"math/rand"
-)
-
-func main() {
-	senha := gerarSenha(5)
-	fmt.Println(senha)
-}
-
-func gerarSenha(lenght int) string {
-	
-	minusculas := "abcdefghijklmnopqrstuvwxyz"
-	maiusculas := "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-	numeros:= "0123456789"
-	caracteresEspeciais := "!@#$%^&*()+?><:{}[]"
-	caractereGrande := minusculas + maiusculas + numeros + caracteresEspeciais
-
-	obrigatorio := []byte{
-		maiusculas[rand.Intn(len(maiusculas))],
-		numeros[rand.Intn(len(numeros))],
-	}
-	senha := make([]byte, lenght-len(obrigatorio) )
-
-	for i := range senha {
-		senha[i] = caractereGrande[rand.Intn(len(caractereGrande))]
-	}
-
-	senha = append(senha, obrigatorio...)
-
-	rand.Shuffle(len(senha), func (i, j int)  {
-		senha[i], senha[j] = senha[j], senha[i]
-	})
-
-	return string(senha)
-}
-```
 
 ## Contribuição
 
