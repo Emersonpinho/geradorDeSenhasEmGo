@@ -96,6 +96,4 @@ Este projeto não possui uma licença específica.
 ---
 
 Feito com ❤️ por [Emersonpinho](https://github.com/Emersonpinho)
-````
 
-Espero que você goste do README. Sinta-se à vontade para fazer ajustes conforme necessário!
